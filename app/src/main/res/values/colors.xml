@@ -11,7 +11,7 @@
 
     <color name="primaryColor">#424242</color>
     <color name="primaryDark">#1b1b1b</color>
-
     <color name="bg_color">#99000000</color>
     <color name="placeholder">#6FB6B6B6</color>
+
 </resources>
