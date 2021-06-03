@@ -33,10 +33,10 @@ class MainActivity : AppCompatActivity() {
         val conditions = FirebaseModelDownloadConditions.Builder()
             .requireWifi()
             .build()
-        FirebaseModelManager.getInstance().download(remoteModel, conditions)
-            .addOnCompleteListener {
-                // Success.
-            }
+//        FirebaseModelManager.getInstance().download(remoteModel, conditions)
+//            .addOnCompleteListener {
+//                // Success.
+//            }
         val drawerLayout: DrawerLayout = binding.drawerLayout
         val navView: NavigationView = binding.navView
         val navController = findNavController(R.id.nav_host_fragment_content_main)
