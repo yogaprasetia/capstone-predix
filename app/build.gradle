@@ -9,6 +9,10 @@ android {
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
 
+    aaptOptions {
+        noCompress "tflite"
+    }
+
     defaultConfig {
         applicationId "com.predixteam.predixai"
         minSdkVersion 23
@@ -77,5 +81,7 @@ dependencies {
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$kotlin_coroutines_version"
     implementation "androidx.room:room-ktx:$room_version"
 
+    //noinspection OutdatedLibrary
+    implementation 'com.google.firebase:firebase-ml-model-interpreter:22.0.3'
     implementation 'com.github.dhaval2404:imagepicker:2.1'
 }
