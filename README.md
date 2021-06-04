@@ -3,6 +3,7 @@
 - Kotlin
 - Tensorflow
 - GCP App Engine
+- Flask
 - Webview
 - Firebase
 
