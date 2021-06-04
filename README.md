@@ -2,7 +2,6 @@
 ## Technologies
 - Kotlin
 - Tensorflow
-- Firebase
 
 ## Capstone Team Member
 - A2722514 - Baso Rizky Hamdana
