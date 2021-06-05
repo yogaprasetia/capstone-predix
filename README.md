@@ -3,6 +3,7 @@
 - Kotlin
 - Tensorflow Lite
 - Cloud Firestore
+- GCP App Engine
 
 ## Capstone Team Member
 - A2722514 - Baso Rizky Hamdana
