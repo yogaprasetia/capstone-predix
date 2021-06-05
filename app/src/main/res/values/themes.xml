@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.Predixai" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.Predixai" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/primaryColor</item>
         <item name="colorPrimaryVariant">@color/primaryDark</item>
@@ -14,18 +14,4 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="Theme.Predixai.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-    </style>
-
-    <style name="Theme.Predixai.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" >
-        <item name="android:fontFamily">@font/poppins_medium</item>
-    </style>
-
-    <style name="Theme.Predixai.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
-    
-    <style name="PoppinsFontStyle" parent="android:Widget.TextView">
-        <item name="android:fontFamily">@font/poppins_medium</item>
-    </style>
 </resources>

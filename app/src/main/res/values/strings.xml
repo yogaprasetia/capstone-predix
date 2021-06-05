@@ -16,4 +16,5 @@
     <string name="result_detection">Result detection</string>
     <string name="permission_denied">Permission Denied</string>
     <string name="task_cancelled">Task Cancelled</string>
+    <string name="menu_profile">Profile</string>
 </resources>
