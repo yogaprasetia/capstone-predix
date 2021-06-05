@@ -24,4 +24,9 @@
     <string name="start_detection">Start Detection</string>
     <string name="detection">Detection</string>
     <string name="detect">Detect</string>
+    <string name="by_predix_team">by Predix.team</string>
+    <string name="logo_app">Logo app</string>
+    <string name="poster_onboard">Poster onboard</string>
+    <string name="lorem_ipsum">Lorem Ipsum</string>
+    <string name="lorem_ipsum_long">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vulputate et nibh vel fringilla. Ut felis velit, facilisis et nisl ut, dictum placerat ex.</string>
 </resources>

@@ -14,13 +14,11 @@ import android.util.Log
 import android.widget.Toast
 import androidx.activity.result.ActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
-import androidx.lifecycle.ViewModelProvider
 import com.github.dhaval2404.imagepicker.ImagePicker
 import com.predixteam.predixai.R
 import com.predixteam.predixai.data.ModelEntity
 import com.predixteam.predixai.databinding.ActivityDetectionBinding
 import com.predixteam.predixai.ml.MblnetPneumo
-import com.predixteam.predixai.ml.Resnet50Covcough
 import com.predixteam.predixai.ml.ResnetTb
 import org.tensorflow.lite.DataType
 import org.tensorflow.lite.support.tensorbuffer.TensorBuffer
@@ -31,9 +29,7 @@ import java.nio.ByteOrder
 class DetectionActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityDetectionBinding
-    private lateinit var viewModel: DetectionViewModel
     private var img: Bitmap? = null
-
 
     private val startForProfileImageResult =
         registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result: ActivityResult ->
@@ -47,7 +43,11 @@ class DetectionActivity : AppCompatActivity() {
                     binding.btnDetect.isEnabled = true
                     img = if(Build.VERSION.SDK_INT >= 28){
                         val source = ImageDecoder.createSource(this.contentResolver, fileUri)
-                        ImageDecoder.decodeBitmap(source).copy(Bitmap.Config.RGBA_F16, true)
+                        ImageDecoder.decodeBitmap(source) { decoder, _, _ ->
+                            decoder.allocator = ImageDecoder.ALLOCATOR_SOFTWARE
+                            decoder.isMutableRequired = true
+                        }
+
                     }else{
                         MediaStore.Images.Media.getBitmap(this.contentResolver, fileUri)
                     }
@@ -117,12 +117,14 @@ class DetectionActivity : AppCompatActivity() {
 
                 }
                 3 -> {
-                    Toast.makeText(this, "Covid need normalize", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Fitur sedang maintenance", Toast.LENGTH_SHORT).show()
                 }
             }
 
         }
     }
+
+
 
     private fun getMax(arr: FloatArray): Int {
         var ind = 0
