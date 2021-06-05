@@ -7,13 +7,13 @@ import android.graphics.Bitmap
 import android.graphics.Color
 import android.graphics.ImageDecoder
 import android.os.Build
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.MediaStore
 import android.util.Log
 import android.widget.Toast
 import androidx.activity.result.ActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.appcompat.app.AppCompatActivity
 import com.github.dhaval2404.imagepicker.ImagePicker
 import com.predixteam.predixai.R
 import com.predixteam.predixai.data.ModelEntity
@@ -22,7 +22,6 @@ import com.predixteam.predixai.ml.MblnetPneumo
 import com.predixteam.predixai.ml.ResnetTb
 import org.tensorflow.lite.DataType
 import org.tensorflow.lite.support.tensorbuffer.TensorBuffer
-import java.lang.Exception
 import java.nio.ByteBuffer
 import java.nio.ByteOrder
 
@@ -93,6 +92,11 @@ class DetectionActivity : AppCompatActivity() {
                         val outputFeature0 = outputs.outputFeature0AsTensorBuffer
                         val result = getMax(outputFeature0.floatArray).toString()
                         binding.tvResultDetect.text = result
+                        if (result == "1"){
+                            binding.tvResultDetect.text = "Pneumonia Disease Detected"
+                        } else if (result == "0"){
+                            binding.tvResultDetect.text = "Normal"
+                        }
                         model.close()
 
                     }catch (e: Exception){
@@ -109,6 +113,11 @@ class DetectionActivity : AppCompatActivity() {
                         val outputFeature0 = outputs.outputFeature0AsTensorBuffer
                         val result = getMax(outputFeature0.floatArray).toString()
                         binding.tvResultDetect.text = result
+                        if (result == "1"){
+                            binding.tvResultDetect.text = "TBC Disease Detected"
+                        } else if (result == "0"){
+                            binding.tvResultDetect.text = "Normal"
+                        }
                         model.close()
 
                     }catch (e: Exception){
