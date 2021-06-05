@@ -1,7 +1,8 @@
 # Capstone Project Predix.ai
 ## Technologies
 - Kotlin
-- Tensorflow
+- Tensorflow Lite
+- Cloud Firestore
 
 ## Capstone Team Member
 - A2722514 - Baso Rizky Hamdana
