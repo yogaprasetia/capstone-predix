@@ -7,9 +7,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.GridLayoutManager
 import com.predixteam.predixai.data.ModelEntity
 import com.predixteam.predixai.databinding.FragmentHomeBinding
+import com.predixteam.predixai.ui.details.DetailsActivity
 import com.predixteam.predixai.ui.detection.DetectionActivity
 
 class HomeFragment : Fragment() {
@@ -26,7 +27,7 @@ class HomeFragment : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
 
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         return binding.root
@@ -42,12 +43,14 @@ class HomeFragment : Fragment() {
 
         binding.rvModel.apply {
             adapter = homeAdapter
-            layoutManager = LinearLayoutManager(requireActivity())
+            layoutManager = GridLayoutManager(requireActivity(), 2)
         }
 
         homeAdapter.setOnItemClickCallback(object : HomeAdapter.OnItemClickCallback{
             override fun onItemClicked(data: ModelEntity) {
-                startActivity(Intent(activity, DetectionActivity::class.java))
+                val intent = Intent(activity, DetailsActivity::class.java)
+                intent.putExtra(DetailsActivity.EXTRA_DATA, data)
+                startActivity(intent)
             }
 
         })

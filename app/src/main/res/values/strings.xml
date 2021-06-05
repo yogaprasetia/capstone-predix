@@ -17,4 +17,11 @@
     <string name="permission_denied">Permission Denied</string>
     <string name="task_cancelled">Task Cancelled</string>
     <string name="menu_profile">Profile</string>
+    <string name="welcome_message">Detect your disease\nwith predix.ai</string>
+    <string name="welcome_title">Welcome</string>
+    <string name="details_title">Details</string>
+    <string name="model_image">Model Image</string>
+    <string name="start_detection">Start Detection</string>
+    <string name="detection">Detection</string>
+    <string name="detect">Detect</string>
 </resources>

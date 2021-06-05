@@ -5,7 +5,10 @@ import kotlinx.parcelize.Parcelize
 
 @Parcelize
 data class ModelEntity(
+    val id: Int,
     val name: String,
     val disease: String,
-    val imageModel: String
+    val details: String,
+    val imageModel: String,
+    val label: String
 ): Parcelable

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "279981866478",
+    "project_id": "b21-cap0443",
+    "storage_bucket": "b21-cap0443.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:279981866478:android:37e3ef870dec04268022ff",
+        "android_client_info": {
+          "package_name": "com.predixteam.predixai"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "279981866478-hu7c9tnr7fr33el26bo0q7lba05mlq87.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3t0s71A2XAXuQN5kIRhjn_JK88eknOH8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "279981866478-9p20vu1khg6ia1a12a7cgrsufa3dvggu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
