@@ -5,6 +5,11 @@
 - Cloud Firestore
 - GCP App Engine
 
+## Dataset used :
+- https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+- https://www.kaggle.com/himanshu007121/coughclassifier-trial
+- https://www.kaggle.com/tawsifurrahman/tuberculosis-tb-chest-xray-dataset
+
 ## Capstone Team Member
 - A2722514 - Baso Rizky Hamdana
 - A2672484 - Syahriful Hikmatulloh
