@@ -5,7 +5,7 @@
 - Cloud Firestore
 - GCP App Engine
 
-## Dataset used :
+## Dataset used
 - https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
 - https://www.kaggle.com/himanshu007121/coughclassifier-trial
 - https://www.kaggle.com/tawsifurrahman/tuberculosis-tb-chest-xray-dataset
