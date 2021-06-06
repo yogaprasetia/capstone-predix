@@ -7,12 +7,9 @@
 - GCP App Engine
 
 ## App Screenshots
-<img src="https://raw.githubusercontent.com/yogaprasetia/capstone-predix/master/ss1.jpg" width="20%" />
-<img src="https://raw.githubusercontent.com/yogaprasetia/capstone-predix/master/ss2.jpg" width="20%" />
-<img src="https://raw.githubusercontent.com/yogaprasetia/capstone-predix/master/ss3.jpg" width="20%" />
-<img src="https://raw.githubusercontent.com/yogaprasetia/capstone-predix/master/ss4.jpg" width="20%" />
-<img src="https://raw.githubusercontent.com/yogaprasetia/capstone-predix/master/ss5.jpg" width="20%" />
-<img src="https://raw.githubusercontent.com/yogaprasetia/capstone-predix/master/ss6.jpg" width="20%" />
+<img src="https://raw.githubusercontent.com/yogaprasetia/capstone-predix/master/ss1.jpg" width="20%" /> <img src="https://raw.githubusercontent.com/yogaprasetia/capstone-predix/master/ss2.jpg" width="20%" /> <img src="https://raw.githubusercontent.com/yogaprasetia/capstone-predix/master/ss3.jpg" width="20%" /> <img src="https://raw.githubusercontent.com/yogaprasetia/capstone-predix/master/ss4.jpg" width="20%" />
+
+<img src="https://raw.githubusercontent.com/yogaprasetia/capstone-predix/master/ss5.jpg" width="20%" /> <img src="https://raw.githubusercontent.com/yogaprasetia/capstone-predix/master/ss6.jpg" width="20%" />
 
 ## Dataset used
 - https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
