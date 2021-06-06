@@ -9,6 +9,7 @@ import com.github.appintro.AppIntro2
 import com.github.appintro.AppIntroCustomLayoutFragment
 import com.predixteam.predixai.MainActivity
 import com.predixteam.predixai.R
+import com.predixteam.predixai.ui.login.LoginActivity
 
 class OnBoardingActivity : AppIntro2() {
 
@@ -40,7 +41,7 @@ class OnBoardingActivity : AppIntro2() {
     }
 
     private fun onBoardFinished(){
-        startActivity(Intent(this, MainActivity::class.java))
+        startActivity(Intent(this, LoginActivity::class.java))
         val sharedPref = this.getSharedPreferences("onBoarding", Context.MODE_PRIVATE)
         val editor = sharedPref.edit()
         editor.putBoolean("Finished", true)

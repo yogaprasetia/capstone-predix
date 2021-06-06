@@ -26,4 +26,9 @@
     <string name="menu_article">Article</string>
     <string name="article">Article</string>
     <string name="article_image">Article image</string>
+    <string name="id">ID</string>
+    <string name="name">NAME</string>
+    <string name="email">EMAIL</string>
+    <string name="image_profile">Image Profile</string>
+    <string name="logout">Logout</string>
 </resources>

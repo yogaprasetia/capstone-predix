@@ -13,6 +13,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Predixai">
+        <activity android:name=".ui.login.LoginActivity"></activity>
         <activity
             android:name=".ui.article.details.DetailsArticleActivity"
             android:parentActivityName=".MainActivity" />
