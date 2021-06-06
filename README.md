@@ -2,13 +2,19 @@
 ## Technologies
 - Kotlin
 - Tensorflow Lite
-- Cloud Firestore
+- Firebase
+- GCP Cloud SQL
 - GCP App Engine
+
+## App Screenshots
 
 ## Dataset used
 - https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
 - https://www.kaggle.com/himanshu007121/coughclassifier-trial
 - https://www.kaggle.com/tawsifurrahman/tuberculosis-tb-chest-xray-dataset
+
+## Cloud Architecture
+<img src="https://raw.githubusercontent.com/yogaprasetia/capstone-predix/master/Cloud%20Architecture.PNG" width="100%" />
 
 ## Capstone Team Member
 - A2722514 - Baso Rizky Hamdana
@@ -17,3 +23,6 @@
 - C2592425 - If'Al Muhammad Qoyyuma
 - M0040197 - Firqa Aqila Noor A
 - M0040203 - Rizqeya Irfan Pratama
+
+## Reference
+- https://www.smashingmagazine.com/2020/08/api-flask-google-cloudsql-app-engine/
