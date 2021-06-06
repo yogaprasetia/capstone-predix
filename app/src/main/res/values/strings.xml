@@ -18,8 +18,6 @@
     <string name="by_predix_team">by Predix.team</string>
     <string name="logo_app">Logo app</string>
     <string name="poster_onboard">Poster onboard</string>
-    <string name="lorem_ipsum">Lorem Ipsum</string>
-    <string name="lorem_ipsum_long">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vulputate et nibh vel fringilla. Ut felis velit, facilisis et nisl ut, dictum placerat ex.</string>
     <string name="pneumonia">Pneumonia Disease Detected</string>
     <string name="normal">Normal</string>
     <string name="tbc">TBC Disease Detected</string>
@@ -31,4 +29,11 @@
     <string name="email">EMAIL</string>
     <string name="image_profile">Image Profile</string>
     <string name="logout">Logout</string>
+    <string name="title_onboard_first">Detection Disease</string>
+    <string name="content_onboard_first">You can detect your disease by testing the results of the chest x-ray</string>
+    <string name="title_onboard_second">Learn more the disease</string>
+    <string name="content_onboard_second">Let\'s learn about diseases that can be detected in this application</string>
+    <string name="title_onboard_third">Read Article About Healthcare</string>
+    <string name="content_onboard_third">You can read articles related to health that can help you in your daily life</string>
+    <string name="upload_image_first">Upload image first!</string>
 </resources>
