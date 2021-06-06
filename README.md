@@ -14,6 +14,7 @@
 - https://www.kaggle.com/tawsifurrahman/tuberculosis-tb-chest-xray-dataset
 
 ## Cloud Architecture
+<img src="https://raw.githubusercontent.com/yogaprasetia/capstone-predix/master/Cloud%20Architecture.PNG" width="50%" />
 
 ## Capstone Team Member
 - A2722514 - Baso Rizky Hamdana
