@@ -3,6 +3,7 @@
 - Kotlin
 - Tensorflow Lite
 - Firebase
+- GCP Cloud SQL
 - GCP App Engine
 
 ## Dataset used
