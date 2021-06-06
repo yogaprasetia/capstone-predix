@@ -11,6 +11,9 @@
 
 <img src="https://raw.githubusercontent.com/yogaprasetia/capstone-predix/master/ss5.jpg" width="20%" /> <img src="https://raw.githubusercontent.com/yogaprasetia/capstone-predix/master/ss6.jpg" width="20%" />
 
+## Deployment App
+- https://github.com/yogaprasetia/capstone-predix/releases/download/1.0/Predix.ai.apk
+
 ## Dataset used
 - https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
 - https://www.kaggle.com/himanshu007121/coughclassifier-trial
