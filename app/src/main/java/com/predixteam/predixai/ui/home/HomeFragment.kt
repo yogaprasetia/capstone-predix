@@ -11,7 +11,6 @@ import androidx.recyclerview.widget.GridLayoutManager
 import com.predixteam.predixai.data.ModelEntity
 import com.predixteam.predixai.databinding.FragmentHomeBinding
 import com.predixteam.predixai.ui.details.DetailsActivity
-import com.predixteam.predixai.ui.detection.DetectionActivity
 
 class HomeFragment : Fragment() {
 

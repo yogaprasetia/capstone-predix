@@ -16,6 +16,7 @@ class DetailsArticleActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityDetailsArticleBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        setSupportActionBar(binding.toolbar)
 
         val data = intent.getParcelableExtra<ResponseItem>(EXTRA_DATA) as ResponseItem
         setLayout(data)

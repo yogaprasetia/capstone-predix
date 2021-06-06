@@ -4,12 +4,6 @@ import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
 import kotlinx.parcelize.Parcelize
 
-data class Response(
-
-	@field:SerializedName("Response")
-	val response: List<ResponseItem>
-)
-
 @Parcelize
 data class ResponseItem(
 
