@@ -2,7 +2,7 @@
 ## Technologies
 - Kotlin
 - Tensorflow Lite
-- Cloud Firestore
+- Firebase
 - GCP App Engine
 
 ## Dataset used
