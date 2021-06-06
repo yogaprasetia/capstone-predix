@@ -1,0 +1,15 @@
+runtime: python39
+
+env_variables:
+  CLOUD_SQL_USERNAME: "cloud sql username database"
+  CLOUD_SQL_PASSWORD: "cloud sql password database"
+  CLOUD_SQL_DATABASE_NAME: "cloud sql database name"
+  CLOUD_SQL_CONNECTION_NAME: "cloud sql connection name"
+
+manual_scaling:
+  instances: 1
+
+resources:
+  cpu: 1
+  memory_gb: 0.5
+  disk_size_gb: 10
