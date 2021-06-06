@@ -13,7 +13,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Predixai">
-        <activity android:name=".LoginActivity"></activity>
+        <activity
+            android:name=".ui.article.details.DetailsArticleActivity"
+            android:parentActivityName=".MainActivity" />
         <activity android:name=".ui.onboarding.OnBoardingActivity" />
         <activity android:name=".ui.splash.SplashActivity">
             <intent-filter>
@@ -30,7 +32,7 @@
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name"></activity>
+            android:label="@string/app_name" />
     </application>
 
 </manifest>

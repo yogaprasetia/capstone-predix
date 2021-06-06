@@ -48,6 +48,7 @@ class DetectionActivity : AppCompatActivity() {
                         }
 
                     }else{
+                        @Suppress("DEPRECATION")
                         MediaStore.Images.Media.getBitmap(this.contentResolver, fileUri)
                     }
                 }
@@ -91,11 +92,10 @@ class DetectionActivity : AppCompatActivity() {
                         val outputs = model.process(inputFeature0)
                         val outputFeature0 = outputs.outputFeature0AsTensorBuffer
                         val result = getMax(outputFeature0.floatArray).toString()
-                        binding.tvResultDetect.text = result
                         if (result == "1"){
-                            binding.tvResultDetect.text = "Pneumonia Disease Detected"
+                            binding.tvResultDetect.text = getString(R.string.pneumonia)
                         } else if (result == "0"){
-                            binding.tvResultDetect.text = "Normal"
+                            binding.tvResultDetect.text = getString(R.string.normal)
                         }
                         model.close()
 
@@ -112,11 +112,10 @@ class DetectionActivity : AppCompatActivity() {
                         val outputs = model.process(inputFeature0)
                         val outputFeature0 = outputs.outputFeature0AsTensorBuffer
                         val result = getMax(outputFeature0.floatArray).toString()
-                        binding.tvResultDetect.text = result
                         if (result == "1"){
-                            binding.tvResultDetect.text = "TBC Disease Detected"
+                            binding.tvResultDetect.text = getString(R.string.tbc)
                         } else if (result == "0"){
-                            binding.tvResultDetect.text = "Normal"
+                            binding.tvResultDetect.text = getString(R.string.normal)
                         }
                         model.close()
 
@@ -126,7 +125,7 @@ class DetectionActivity : AppCompatActivity() {
 
                 }
                 3 -> {
-                    Toast.makeText(this, "Fitur sedang maintenance", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Feature maintenance!", Toast.LENGTH_SHORT).show()
                 }
             }
 
@@ -146,6 +145,7 @@ class DetectionActivity : AppCompatActivity() {
         }
         return ind
     }
+
 
 
     private fun normalizeBitmap(img: Bitmap): ByteBuffer {
