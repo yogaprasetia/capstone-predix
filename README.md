@@ -7,6 +7,7 @@
 - GCP App Engine
 
 ## App Screenshots
+<img src="https://raw.githubusercontent.com/yogaprasetia/capstone-predix/master/ss1.jpg" width="20%" />
 
 ## Dataset used
 - https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
