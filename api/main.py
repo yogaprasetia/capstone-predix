@@ -35,11 +35,11 @@ def add_article(articles):
 
 @app.route('/api', methods=['POST', 'GET'])
 def article():
-    if request.method == 'POST':
-        if not request.is_json:
-            return json.dumps({"msg": "Missing JSON in request"}), 400  
-        add_article(request.get_json())
-        return 'Data Added'
-    return get_article()    
+    if request.method != 'POST':
+        return get_article()
+    else:
+        return json.dumps({"msg": "Missing JSON in request"}), 400  
+    add_article(request.get_json())
+    return 'Article Added'
 if __name__ == '__main__':
     app.run()
