@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, request, render_template
+from flask import Flask, json, request
 import os
 import pymysql
 
@@ -20,7 +20,7 @@ def get_article():
     result = cursor.execute('SELECT * FROM article;')
     article = cursor.fetchall()
     if result > 0:
-            got_article = jsonify(article)
+            got_article = json.dumps(article)
         else:
             got_article = 'No data'
     conn.close()
@@ -37,7 +37,7 @@ def add_article(articles):
 def article():
     if request.method == 'POST':
         if not request.is_json:
-            return jsonify({"msg": "Missing JSON in request"}), 400  
+            return json.dumps({"msg": "Missing JSON in request"}), 400  
         add_article(request.get_json())
         return 'Data Added'
     return get_article()    
