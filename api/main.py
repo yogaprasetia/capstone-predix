@@ -16,10 +16,10 @@ def open_connection():
 
 def get_article():
     conn = open_connection()
-    with conn.cursor() as cursor:
-        result = cursor.execute('SELECT * FROM article;')
-        article = cursor.fetchall()
-        if result > 0:
+    cursor = conn.cursor()
+    result = cursor.execute('SELECT * FROM article;')
+    article = cursor.fetchall()
+    if result > 0:
             got_article = jsonify(article)
         else:
             got_article = 'No data'
@@ -30,7 +30,6 @@ def add_article(articles):
     conn = open_connection()
     cursor = conn.cursor()
     cursor.execute('INSERT INTO article (images, title, content) VALUES(%s, %s, %s)', (articles["images"], articles["title"], articles["content"]))
-    cursor.close()
     conn.commit()
     conn.close()
 
