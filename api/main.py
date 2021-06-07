@@ -41,5 +41,6 @@ def article():
         return json.dumps({"msg": "Missing JSON in request"}), 400  
     add_article(request.get_json())
     return 'Article Added'
+
 if __name__ == '__main__':
     app.run()
