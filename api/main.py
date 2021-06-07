@@ -32,8 +32,9 @@ def get_article():
 
 def add_article(articles):
     conn = open_connection()
-    with conn.cursor() as cursor:
-        cursor.execute('INSERT INTO article (images, title, content) VALUES(%s, %s, %s)', (articles["images"], articles["title"], articles["content"]))
+    cursor = conn.cursor()
+    cursor.execute('INSERT INTO article (images, title, content) VALUES(%s, %s, %s)', (articles["images"], articles["title"], articles["content"]))
+    cursor.close()
     conn.commit()
     conn.close()
 
