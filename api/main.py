@@ -19,10 +19,7 @@ def get_article():
     cursor = conn.cursor()
     result = cursor.execute('SELECT * FROM article;')
     article = cursor.fetchall()
-    if result > 0:
-            got_article = json.dumps(article)
-        else:
-            got_article = 'No data'
+    got_article = json.dumps(article) if result > 0 else 'No data'
     conn.close()
     return got_article
 
