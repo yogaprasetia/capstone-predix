@@ -31,5 +31,9 @@
 - M0040203 - Rizqeya Irfan Pratama
 
 ## Reference
+- https://github.com/qubvel/segmentation_models
+- https://github.com/rwightman/pytorch-image-models
+- https://github.com/DingXiaoH/RepVGG
+- https://github.com/Beckschen/TransUNet
 - https://www.smashingmagazine.com/2020/08/api-flask-google-cloudsql-app-engine/
 - https://www.alodokter.com/
