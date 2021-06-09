@@ -5,13 +5,13 @@ import pymysql
 app = Flask(__name__)
 
 username = os.environ.get('CLOUD_SQL_USERNAME')
-pass = os.environ.get('CLOUD_SQL_PASSWORD')
+password = os.environ.get('CLOUD_SQL_PASSWORD')
 name = os.environ.get('CLOUD_SQL_DATABASE_NAME')
 conn_name = os.environ.get('CLOUD_SQL_CONNECTION_NAME')
 
 def open_connection():
     unix_socket = '/cloudsql/{}'.format(db_connection_name)
-    conn = pymysql.connect(user=username, password=pass,unix_socket=unix_socket, db=name,cursorclass=pymysql.cursors.DictCursor)
+    conn = pymysql.connect(user=username, password=password,unix_socket=unix_socket, db=name,cursorclass=pymysql.cursors.DictCursor)
     return conn
 
 def get_article():
