@@ -4,15 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <title>Predix.ai</title>
 </head>
 <body>
-    <h1>Add Article Predix.ai Data</h1>
-    <form action="{{ url_for('add_article') }}" method="post">
-    <input type="text" id="images" name="images" placeholder="Input Image URL"><br>
-    <input type="text" id="title" name="title" placeholder="Input Article Title"><br>
-    <textarea id="content" name="content" placeholder="Input Article Content"></textarea><br>
-    <input type="submit">
+    <div class="container">
+        <h1>Add Article Predix.ai App</h1>
+        <form action="{{ url_for('add_article') }}" method="post">
+        <div class="form-group">
+            <input type="text" class="form-control" id="images" name="images" placeholder="Input Image URL">
+        </div><br>
+        <div class="form-group">
+            <input type="text" class="form-control" id="title" name="title" placeholder="Input Article Title">
+        </div><br>
+        <div class="form-group">
+            <textarea id="content" class="form-control" row="5" name="content" placeholder="Input Article Content"></textarea>
+        </div><br>
+        <div class="form-group">
+            <input type="submit">
+        </div>
+    </div>
 </form>
 </body>
 </html>
