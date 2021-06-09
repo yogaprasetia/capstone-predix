@@ -1,4 +1,4 @@
-from flask import Flask, json, request
+from flask import Flask, json, request, render_template
 import os
 import pymysql
 
@@ -14,30 +14,42 @@ def open_connection():
     conn = pymysql.connect(user=username, password=password,unix_socket=unix_socket, db=name,cursorclass=pymysql.cursors.DictCursor)
     return conn
 
+@app.route('/', methods=['POST', 'GET'])
+def index():
+    return render_template('index.html')
+
 def get_article():
     conn = open_connection()
     cursor = conn.cursor()
-    result = cursor.execute('SELECT * FROM article;')
+    result = cursor.execute('SELECT * FROM articles;')
     article = cursor.fetchall()
     got_article = json.dumps(article) if result > 0 else 'No data'
     conn.close()
     return got_article
 
-def add_article(articles):
+@app.route('/add_article', methods=['POST', 'GET'])
+def add_article():
     conn = open_connection()
-    cursor = conn.cursor()
-    cursor.execute('INSERT INTO article (images, title, content) VALUES(%s, %s, %s)', (articles["images"], articles["title"], articles["content"]))
-    conn.commit()
-    conn.close()
+    images = request.form['images']
+    title = request.form['title']
+    content = request.form['content']
+    try:
+        cursor = conn.cursor()
+        data_sql = "INSERT INTO articles (images,title, content) VALUES (%s, %s, %s)"
+        cursor.execute(data_sql, (images,title, content))
+        conn.commit()
+    finally:
+        conn.close()
+        return "Article Saved"
 
 @app.route('/api', methods=['POST', 'GET'])
 def article():
     if request.method != 'POST':
         return get_article()
+    elif request.method == 'POST':
+        return add_article()
     else:
-        return json.dumps({"msg": "Missing JSON in request"}), 400  
-    add_article(request.get_json())
-    return 'Article Added'
+        json.dumps({"msg": "Missing JSON in request"}), 400
 
 if __name__ == '__main__':
     app.run()
