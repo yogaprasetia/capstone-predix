@@ -12,7 +12,7 @@
 <img src="https://raw.githubusercontent.com/yogaprasetia/capstone-predix/master/ss5.jpg" width="20%" /> <img src="https://raw.githubusercontent.com/yogaprasetia/capstone-predix/master/ss6.jpg" width="20%" />
 
 ## Deployment App
-- (App) https://github.com/yogaprasetia/capstone-predix/releases/download/1.0/Predix.ai.apk
+- (Mobile App) https://github.com/yogaprasetia/capstone-predix/releases/download/1.0/Predix.ai.apk
 - (Web Post Article) https://b21-cap0443.uc.r.appspot.com/
 - (API) https://b21-cap0443.uc.r.appspot.com/api
 
