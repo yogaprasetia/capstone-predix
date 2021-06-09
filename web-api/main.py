@@ -40,7 +40,7 @@ def add_article():
         conn.commit()
     finally:
         conn.close()
-        return "Article Saved"
+        return "Article Saved to Cloud SQL Database"
 
 @app.route('/api', methods=['POST', 'GET'])
 def article():
