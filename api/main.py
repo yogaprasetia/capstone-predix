@@ -35,8 +35,8 @@ def add_article():
     content = request.form['content']
     try:
         cursor = conn.cursor()
-        data_sql = "INSERT INTO articles (images,title, content) VALUES (%s, %s, %s)"
-        cursor.execute(data_sql, (images,title, content))
+        data_sql = "INSERT INTO articles (images, title, content) VALUES (%s, %s, %s)"
+        cursor.execute(data_sql, (images, title, content))
         conn.commit()
     finally:
         conn.close()
